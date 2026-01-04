@@ -1,8 +1,8 @@
 class Devrun < Formula
   desc "A lightweight task runner for defining and executing shell commands with a clean, readable syntax."
   homepage "https://github.com/nihilok/devrun"
-  url "https://github.com/nihilok/devrun/archive/refs/tags/v0.1.5.tar.gz"
-  sha256 "2313c996ae82d0f35e2ee6b0241669ac78f43ef62b0837713151bf41e02cc9b8"
+  url "https://github.com/nihilok/devrun/archive/refs/tags/v0.1.6.tar.gz"
+  sha256 "53752d051df694859cb96fd40e2b9b95d617614accae0cca03397a733c3db446"
   license "MIT"
   head "https://github.com/nihilok/devrun.git", branch: "main"
 
