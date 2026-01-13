@@ -1,10 +1,10 @@
-class Devrun < Formula
+class Run < Formula
   desc "A lightweight task runner for defining and executing shell commands with a clean, readable syntax."
-  homepage "https://github.com/nihilok/devrun"
-  url "https://github.com/nihilok/devrun/archive/refs/tags/v0.1.7.tar.gz"
-  sha256 "ff5e1379430576ffafec95efd892ac5c48065eb77525f32f7e5e4d1cf599edb9"
+  homepage "https://github.com/nihilok/run"
+  url "https://github.com/nihilok/run/archive/refs/tags/v0.2.0.tar.gz"
+  sha256 "459cb4214da3b673219ea488f527b90ed7195cee4a07a0e4c4ede91df4e60f3a"
   license "MIT"
-  head "https://github.com/nihilok/devrun.git", branch: "main"
+  head "https://github.com/nihilok/run.git", branch: "main"
 
   depends_on "rust" => :build
 
@@ -23,13 +23,13 @@ class Devrun < Formula
         run --generate-completion fish > #{HOMEBREW_PREFIX}/share/fish/vendor_completions.d/run.fish
 
       Create a Runfile in your project root or ~/.runfile for global commands.
-      See https://github.com/nihilok/devrun for documentation.
+      See https://github.com/nihilok/run for documentation.
     EOS
   end
 
   test do
     # Test that the binary exists and can show version
-    assert_match "devrun", shell_output("#{bin}/run --version")
+    assert_match "run", shell_output("#{bin}/run --version")
     
     # Test basic functionality with a simple Runfile
     (testpath/"Runfile").write <<~EOS
