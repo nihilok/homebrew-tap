@@ -1,8 +1,8 @@
 class Runfile < Formula
   desc "A lightweight task runner for defining and executing shell commands with a clean, readable syntax."
   homepage "https://github.com/nihilok/run"
-  url "https://github.com/nihilok/run/archive/refs/tags/v0.2.1.tar.gz"
-  sha256 "db822500bd3e222fa180110cfd56afd696c1cb4fb0bbe4dd68de5c5b7aad14d2"
+  url "https://github.com/nihilok/run/archive/refs/tags/v0.2.2.tar.gz"
+  sha256 "3e5f2d2487e70b49472381e7888b84dc3aa88c7f4f4861360efcb512270120e6"
   license "MIT"
   head "https://github.com/nihilok/run.git", branch: "main"
 
@@ -16,11 +16,6 @@ class Runfile < Formula
     <<~EOS
       To enable tab completions, run:
         run --install-completion
-
-      Or manually install for your shell:
-        run --generate-completion bash > #{HOMEBREW_PREFIX}/etc/bash_completion.d/run
-        run --generate-completion zsh > #{HOMEBREW_PREFIX}/share/zsh/site-functions/_run
-        run --generate-completion fish > #{HOMEBREW_PREFIX}/share/fish/vendor_completions.d/run.fish
 
       Create a Runfile in your project root or ~/.runfile for global commands.
       See https://github.com/nihilok/run for documentation.
