@@ -1,8 +1,8 @@
 class Runfile < Formula
   desc "A lightweight task runner for defining and executing shell commands with a clean, readable syntax."
   homepage "https://github.com/nihilok/run"
-  url "https://github.com/nihilok/run/archive/refs/tags/v0.3.0.tar.gz"
-  sha256 "afab70be8840835a12293a2275b488652f362095dcf55acd1108bf2e1f8ddca4"
+  url "https://github.com/nihilok/run/archive/refs/tags/v0.3.1.tar.gz"
+  sha256 "d933b766ac4102ca9d4fd768fe397ff0b1afb848ed4e2267f4de44f474297f96"
   license "MIT"
   head "https://github.com/nihilok/run.git", branch: "main"
 
