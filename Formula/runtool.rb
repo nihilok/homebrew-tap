@@ -1,4 +1,4 @@
-class Runfile < Formula
+class Runtool < Formula
   desc "A.K.A. run - the bridge between human and AI tooling"
   homepage "https://github.com/nihilok/run"
   url "https://github.com/nihilok/run/archive/refs/tags/v0.3.1.tar.gz"
