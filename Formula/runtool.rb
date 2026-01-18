@@ -9,7 +9,7 @@ class Runtool < Formula
   depends_on "rust" => :build
 
   def install
-    system "cargo", "install", *std_cargo_args
+    system "cargo", "install", "--locked", "--root=#{prefix}", "--path=run"
   end
 
   def caveats
