@@ -1,8 +1,8 @@
 class Runtool < Formula
   desc "A.K.A. run - the bridge between human and AI tooling"
   homepage "https://github.com/nihilok/run"
-  url "https://github.com/nihilok/run/archive/refs/tags/v0.3.7.tar.gz"
-  sha256 "dcc8b1549eb7901e60eab1856b7a3444751b08ce3b87c29d880c8ef0dce62cd0"
+  url "https://github.com/nihilok/run/archive/refs/tags/v0.3.8.tar.gz"
+  sha256 "8699b9525dc152693754a66de28253414e3a0e74cf113917bb52e22b6517d31b"
   license "MIT"
   head "https://github.com/nihilok/run.git", branch: "main"
 
