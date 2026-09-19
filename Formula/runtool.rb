@@ -25,12 +25,12 @@ class Runtool < Formula
   test do
     # Test that the binary exists and can show version
     assert_match "run", shell_output("#{bin}/run --version")
-    
+
     # Test basic functionality with a simple Runfile
     (testpath/"Runfile").write <<~EOS
       test() echo "Hello from Homebrew test"
     EOS
-    
+
     output = shell_output("#{bin}/run test")
     assert_match "Hello from Homebrew test", output
   end
