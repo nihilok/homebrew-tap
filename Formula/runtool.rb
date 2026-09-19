@@ -8,15 +8,16 @@ class Runtool < Formula
 
   depends_on "rust" => :build
 
+  conflicts_with "run", because: "both install a `run` binary"
+  conflicts_with "run-kit", because: "both install a `run` binary"
+
   def install
-    system "cargo", "install", "--locked", "--root=#{prefix}", "--path=run"
+    system "cargo", "install", *std_cargo_args(path: "run")
+    generate_completions_from_executable(bin/"run", "--generate-completion")
   end
 
   def caveats
     <<~EOS
-      To enable tab completions, run:
-        run --install-completion
-
       Create a Runfile in your project root or ~/.runfile for global commands.
       See https://github.com/nihilok/run for documentation.
     EOS
